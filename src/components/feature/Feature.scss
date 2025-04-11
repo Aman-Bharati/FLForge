@@ -1,0 +1,87 @@
+.feature {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    color: white;
+
+    .container {
+        width: 1400px;
+        display: flex;
+        align-items: center;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            h1 {
+                font-size: 50px;
+            }
+
+            .search {
+                display: flex;
+                background-color: white;
+                align-items: center;
+                border-radius: 8px;
+                justify-content: space-between;
+
+                .searchInput {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        margin: 10px;
+                    }
+
+                    input {
+                        border: none;
+                        outline: none;
+                    }
+
+                }
+
+                button {
+                    width: 120px;
+                    height: 50px;
+                    border-radius: 10px;
+                    background-color: antiquewhite;
+                    cursor: pointer;
+                    color: white;
+                    border: none;
+                }
+            }
+
+            .popular {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                
+
+                button {
+                    color: white;
+                    background-color: transparent;
+                    border: 2px solid white;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .right {
+            height: 100%;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+    }
+}

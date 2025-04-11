@@ -1,0 +1,130 @@
+.gigs {
+    background-color: #f8f8f8;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+
+
+        .title {
+            font-size: 18px;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 10px;
+            color: #0066cc;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+
+            .left {
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-right: 10px;
+                    font-weight: bold;
+                    color: #333;
+                }
+
+                input {
+                    margin-right: 10px;
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 20px;
+                }
+
+                button {
+                    padding: 8px 15px;
+                    background-color: #0066cc;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 15px;
+
+                }
+            }
+
+            .right {
+                display: flex;
+                align-items: center;
+
+                .sortBy {
+                    margin-right: 10px;
+                    font-weight: bold;
+                    color: #333;
+                }
+
+                .sortType {
+                    margin-right: 10px;
+                    color: #0066cc;
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
+
+                .rightMenu {
+                    display: none;
+                    position: absolute;
+                    background-color: #fff;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                    padding: 10px;
+                    align-items: center;
+                    border-radius: 15px;
+
+                    span {
+                        display: block;
+                        margin-bottom: 8px;
+                        font-weight: 500;
+                        color: #333;
+                        cursor: pointer;
+                    }
+                }
+
+                &:hover {
+                    .rightMenu {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; 
+      
+            .card {
+              background-color: #fff;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+              padding: 20px;
+              border-radius: 8px; 
+      
+              h2 {
+                font-size: 18px;
+                color: #333; 
+              }
+      
+              p {
+                font-size: 14px;
+                color: #666; 
+              }
+            }
+        }
+    }
+}

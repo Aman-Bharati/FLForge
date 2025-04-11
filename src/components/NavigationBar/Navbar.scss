@@ -1,0 +1,109 @@
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    color: white;
+    z-index: 1000;
+    transition: 0.5s all ease;
+    position: sticky;
+    top: 0;
+
+    &.active{
+        background-color: white;
+        color: black;
+    }
+
+    .container{
+        width: 1400px;
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            font-size: 34px;
+            font-weight: bold;
+            
+        }
+
+        .links{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+
+            .Seller {
+                color: inherit;
+                text-decoration: none;
+                font-weight: 500; 
+                cursor: pointer;
+                transition: color 0.3s ease;
+              }
+              
+              .Seller:hover {
+                color: inherit; 
+              }
+
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                position: relative;
+
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .options{
+                    position: absolute;
+                    top: 50px;
+                    right: 0;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 10px;
+                    border: 1px solid rebeccapurple;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    color: black;
+                    width: 200px;
+                    font-weight: 300;
+                }
+            }
+            
+            button{
+                color:white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: 1px solid white;
+                cursor: pointer;
+                background-color: transparent;
+
+                &:hover{
+                    background-color: rgb(40, 186, 244);
+                    border-color: black;
+                }
+
+            }
+        }
+    }
+    .hr{
+        width: 100%;
+        height: 0;
+        border: 0.5px solid rgb(250, 253, 250);
+    }
+    .menu{
+        width: 1400px;
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 300;
+        color: burlywood;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}

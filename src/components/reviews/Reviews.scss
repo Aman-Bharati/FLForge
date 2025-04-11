@@ -1,0 +1,56 @@
+.reviews {
+  margin-top: 20px;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .review {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+
+    p {
+      margin-top: 5px;
+      color: #333;
+    }
+  }
+
+  .add {
+    margin-top: 20px;
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .addForm {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input,
+      select,
+      button {
+        padding: 8px;
+        font-size: 1rem;
+      }
+
+      button {
+        cursor: pointer;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+
+      select {
+        width: 100px;
+      }
+    }
+  }
+}

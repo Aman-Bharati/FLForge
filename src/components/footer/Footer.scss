@@ -1,0 +1,55 @@
+$primaryColor: #3498db; 
+$secondaryColor: #2c3e50;
+$textColor: #ecf0f1;
+$backgroundColor: #34495e;
+
+.Footer {
+  background-color: $backgroundColor;
+  color: $textColor;
+  padding: 40px 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    .top {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; 
+
+      .item {
+        flex: 1;
+        margin-right: 20px;
+
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+          color: $primaryColor;
+        }
+
+        span {
+          display: block;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .bottom {
+      display: flex;
+      margin-top: 20px;
+
+      .left,
+      .right {
+        flex: 1;
+        height: 2px;
+        margin-left: 10px;
+        background-color: $primaryColor;
+      }
+
+      .right {
+        margin-left: 20px;
+      }
+    }
+  }
+}
